@@ -14,6 +14,7 @@ _exclude:
     - ".gitmodules"
     - "custom.yml"
     - "includes"
+    - "README.md"
 
 project_name:
     type: str
