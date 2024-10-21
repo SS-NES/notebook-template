@@ -4,9 +4,9 @@
 #   block_start_string: '[%'
 
 _message_before_copy: |
-  Thanks for using SS NES software project template 
+  Thanks for using SS NES Jupyter Notebook project template 
 _message_after_copy: |
-  Your project "{{ software_name }}" has been created successfully!
+  Your project "{{ project_name }}" has been created successfully!
 _exclude:
     - ".git"
     - ".github"
@@ -15,20 +15,20 @@ _exclude:
     - "custom.yml"
     - "includes"
 
-software_name:
+project_name:
     type: str
-    help: What's the name of your software?
+    help: What's the name of your project?
     default: Awesome
 
 community:
     type: bool
     default: False
-    help: Do you intent to have a community around "{{ software_name }}"?
+    help: Do you intent to have a community around "{{ project_name }}"?
 
 code_of_conduct:
     type: bool
     default: False
-    help: Do you want to include a code of conduct for "{{ software_name }}"?
+    help: Do you want to include a code of conduct for "{{ project_name }}"?
 
 contact_email:
     type: str
@@ -38,7 +38,7 @@ contact_email:
 owner:
     type: str
     default: "Iowner"
-    help: Who owns the software? (e.g. you, or your university, etc.)
+    help: Who owns the project? (e.g. you, or your university, etc.)
 
 copyright_holder:
     type: str
@@ -49,7 +49,7 @@ copyright_holder:
 citation:
     type: bool
     default: False
-    help: Do you want to create a citation file for "{{ software_name }}"?
+    help: Do you want to create a citation file for "{{ project_name }}"?
 
 software_license:
   default: MIT License
@@ -67,28 +67,23 @@ software_license:
     - No License
     - The Unlicense (Unlicense)
     - The 3-Clause DSB License (DBS-3-Clause)
-  help: Choose a license for "{{ software_name }}" (e.g. "MIT", "GPL-3.0").
+  help: Choose a license for "{{ project_name }}" (e.g. "MIT", "GPL-3.0").
   type: str
 
-software_purpose:
+project_purpose:
     type: str
-    default: "The purpose of {{ software_name }} is ..."
-    help: What's the purpose of "{{ software_name}}?"
-
-package_name:
-    type: str
-    help: What name you want to use for your Python package?
-    default: "{{ software_name | lower }}"
+    default: "The purpose of {{ project_name }} is ..."
+    help: What's the purpose of "{{ project_name}}?"
 
 documentation:
     type: bool
     default: False
-    help: Do you plan to write extensive documentation for "{{ software_name }}"?
+    help: Do you plan to write extensive documentation for "{{ project_name }}"?
 
 documentation_type:
     type: str
     default: "user"
-    help: For who do you plant to write documentation for "{{ software_name }}"?
+    help: For who do you plan to write documentation for "{{ project_name }}"?
     choices:
         - user
         - developer
