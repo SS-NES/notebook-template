@@ -6,7 +6,7 @@
 _message_before_copy: |
   Thanks for using SS NES Jupyter Notebook project template 
 _message_after_copy: |
-  Your project "{{ project_name }}" has been created successfully!
+  Your Notebook project "{{ software_name }}" has been created successfully!
 _exclude:
     - ".git"
     - ".github"
@@ -14,6 +14,8 @@ _exclude:
     - ".gitmodules"
     - "custom.yml"
     - "includes"
+    - "copier.yml"
+    - ".meta-answers.yml"
     - "README.md"
 
 project_name:
