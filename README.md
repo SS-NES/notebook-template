@@ -14,7 +14,7 @@ This is a copier Jupyter Notebook project template that implements the best prac
 ```shell
 copier copy https://github.com/SS-NES/notebook-template <path/to/project-directory>
 ```
-Of after clonning the repository, use a **full path** to `Software-Templates/`:
+Alternatively, after clonning the repository, use a **full path** to `Software-Templates/`:
 
 ```shell
 copier copy ~/<local-path>/Software-Templates <path/to/project-directory>
