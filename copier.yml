@@ -76,7 +76,7 @@ software_license:
 project_purpose:
     type: str
     default: "The purpose of {{ project_name }} is ..."
-    help: What's the purpose of "{{ project_name}}?"
+    help: What's the purpose of "{{ project_name }}?"
 
 documentation:
     type: bool
