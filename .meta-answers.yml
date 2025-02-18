@@ -1,5 +1,5 @@
 # Changes here will be overwritten by Copier; NEVER EDIT MANUALLY
-_commit: v1.6
+_commit: v1.18
 _src_path: https://github.com/SS-NES/meta-template.git
 description: A simple template for notebook users
 template_name: Notebook template
