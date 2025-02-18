@@ -11,12 +11,10 @@ _exclude:
     - ".git"
     - ".github"
     - ".gitignore"
-    - ".gitmodules"
     - "custom.yml"
     - "includes"
     - "copier.yml"
     - ".meta-answers.yml"
-    - "README.md"
 
 project_name:
     type: str
@@ -33,6 +31,11 @@ code_of_conduct:
     default: False
     help: Do you want to include a code of conduct for "{{ project_name }}"?
 
+code_of_conduct:
+    type: bool
+    default: False
+    help: Do you want to include a code of conduct for "{{ software_name }}"?
+    
 contact_email:
     type: str
     help: What's the contact email for the code of conduct"?
