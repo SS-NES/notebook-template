@@ -6,7 +6,7 @@
 _message_before_copy: |
   Thanks for using SS NES Jupyter Notebook project template 
 _message_after_copy: |
-  Your Notebook project "{{ software_name }}" has been created successfully!
+  Your Notebook project "{{ project_name }}" has been created successfully!
 _exclude:
     - ".git"
     - ".github"
@@ -34,7 +34,7 @@ code_of_conduct:
 code_of_conduct:
     type: bool
     default: False
-    help: Do you want to include a code of conduct for "{{ software_name }}"?
+    help: Do you want to include a code of conduct for "{{ project_name }}"?
     
 contact_email:
     type: str
