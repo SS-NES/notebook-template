@@ -34,7 +34,7 @@ copier update
 Given data from an SMP is provided as a YAML like:
 
 ```yml
-software_name:  Demo
+project_name:  Demo
 release_date: June 4, 2024
 smp_version:  0.1.0
 authors:  [Jane Doe](mailto:doe.j@example.nl)
