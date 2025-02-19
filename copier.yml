@@ -15,6 +15,7 @@ _exclude:
     - "includes"
     - "copier.yml"
     - ".meta-answers.yml"
+    - "SCENARIO.md"
 
 project_name:
     type: str
