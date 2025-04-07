@@ -82,17 +82,6 @@ documentation:
     type: bool
     default: False
     help: Do you plan to write extensive documentation for "{{ project_name }}"?
-
-documentation_type:
-    type: str
-    default: "user"
-    help: For who do you plan to write documentation for "{{ project_name }}"?
-    choices:
-        - user
-        - developer
-        - user & developer
-    when: "{{ documentation == True }}"
-
 ---
 # Uncomment the line below to include custom questions
 # Add custom questions to custom.yml
