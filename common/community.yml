@@ -3,12 +3,12 @@
 community:
     type: bool
     default: False
-    help: Do you intent to have a community around "{{ software_name }}"?
+    help: Do you intent to have a community around "{{ project_name }}"?
 
 code_of_conduct:
     type: bool
     default: False
-    help: Do you want to include a code of conduct for "{{ software_name }}"?
+    help: Do you want to include a code of conduct for "{{ project_name }}"?
     
 contact_email:
     type: str

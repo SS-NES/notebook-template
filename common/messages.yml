@@ -4,4 +4,4 @@ _message_before_copy: |
   For more information, visit https://ss-nes.github.io/meta-template/
 
 _message_after_copy: |
-  Your project "{{ software_name }}" has been created successfully!
+  Your project "{{ project_name }}" has been created successfully!

@@ -10,6 +10,6 @@ _skip_if_exists:
 
 # default values
 defaults:
-  software_name: Awesome
+  project_name: Awesome
 
 

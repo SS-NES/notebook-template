@@ -27,5 +27,5 @@ software_license:
     - No License
     - The Unlicense (Unlicense)
     - The 3-Clause DSB License (DBS-3-Clause)
-  help: Choose a license for "{{ software_name }}" (e.g. "MIT", "GPL-3.0").
+  help: Choose a license for "{{ project_name }}" (e.g. "MIT", "GPL-3.0").
   type: str

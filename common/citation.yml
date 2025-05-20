@@ -3,11 +3,11 @@
 citation:
     type: bool
     default: False
-    help: Do you want to create a citation file for "{{ software_name }}"?
+    help: Do you want to create a citation file for "{{ project_name }}"?
 
 authors:
     type: str
-    help: Who is the author of "{{ software_name }}"?
+    help: Who is the author of "{{ project_name }}"?
     default: |- 
         {{ owner }}
     when: citation
