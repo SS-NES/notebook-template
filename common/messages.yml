@@ -1,0 +1,7 @@
+_message_before_copy: |
+  Thanks for using Jupyter Notebook project template.
+  This templating was generated using the SS NES Meta Template.
+  For more information, visit https://ss-nes.github.io/meta-template/
+
+_message_after_copy: |
+  Your Notebook project "{{ project_name }}" has been created successfully!
