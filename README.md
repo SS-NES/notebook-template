@@ -16,10 +16,10 @@ notebook, documentation, etc.
 pipx install copier
 ```
 
-2. Start a new software project using this template:
+2. Start a new Jupyter Notebook project using this template:
 
 ```python
-copier copy https://github.com/<account>/<repo>.git <path/to/project-directory>
+copier copy https://github.com/SS-NES/notebook-template <path/to/project-directory>
 ```
 
 3. Inialize a Git repository in your templating project
@@ -35,7 +35,6 @@ git commit -m 'initial commit'
 Read our [guidelines](CONTRIBUTING.md) to know how to be part of the development of this template. 
 
 ## License
-
 
 This template is freely available under an [Apache License 2.0](https://choosealicense.com/licenses/apache-2.0/)
 
