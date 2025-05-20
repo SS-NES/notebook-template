@@ -1,89 +1,44 @@
-# configs
-# _envops:
-#   block_end_string: '%]'
-#   block_start_string: '[%'
-
-_message_before_copy: |
-  Thanks for using SS NES Jupyter Notebook project template 
-_message_after_copy: |
-  Your Notebook project "{{ project_name }}" has been created successfully!
+# Exclude from the final project
+_subdirectory: template
 _exclude:
     - ".git"
     - ".github"
     - ".gitignore"
-    - "custom.yml"
     - "includes"
     - "copier.yml"
+    - "project"
     - ".meta-answers.yml"
-    - "SCENARIO.md"
+    - "CODE_OF_CONDUCT.md"
+    - "CONTRIBUTING.md"
 
-project_name:
-    type: str
-    help: What's the name of your project?
-    default: Awesome
-
-project_purpose:
-    type: str
-    default: "The purpose of {{ project_name }} is ..."
-    help: What's the purpose of "{{ project_name }}?"
-
-owner:
-    type: str
-    default: "Iowner"
-    help: Who owns the project? (e.g. you, or your university, etc.)
-
-
-copyright_holder:
-    type: str
-    default: |- 
-        {{ owner }}
-    help: Copyright holder
-
-community:
-    type: bool
-    default: False
-    help: Do you intent to have a community around "{{ project_name }}"?
-
-code_of_conduct:
-    type: bool
-    default: False
-    help: Do you want to include a code of conduct for "{{ project_name }}"?
-
-contact_email:
-    type: str
-    help: What's the contact email for the code of conduct"?
-    when: "{{ code_of_conduct == True }}"
-    
-citation:
-    type: bool
-    default: False
-    help: Do you want to create a citation file for "{{ project_name }}"?
-
-software_license:
-  default: MIT License
-  choices:
-    - Apache Software License
-    - Boost Software License 1.0 (BSL-1.0)
-    - CC0 Public Domain Dedication (CC0 1.0)
-    - European Union Public License 1.2 (EUPL-1.2)
-    - GNU Affero General Public License v3
-    - GNU General Public License v2 (GPLv2)
-    - GNU General Public License v3 (GPLv3)
-    - GNU Lesser General Public License v3 (LGPLv3)
-    - MIT License
-    - Mozilla Public License 2.0 (MPL 2.0)
-    - No License
-    - The Unlicense (Unlicense)
-    - The 3-Clause DSB License (DBS-3-Clause)
-  help: Choose a license for "{{ project_name }}" (e.g. "MIT", "GPL-3.0").
-  type: str
-
-documentation:
-    type: bool
-    default: False
-    help: Do you plan to write extensive documentation for "{{ project_name }}"?
 ---
-# Uncomment the line below to include custom questions
-# Add custom questions to custom.yml
+# Template settings
+!include common/settings.yml
 
-# !include custom.yml
+---
+# Common questions about the software project
+!include common/software.yml
+
+---
+# Common questions about software community
+!include common/community.yml
+
+---
+# Common questions about licensing
+!include common/licensing.yml
+
+---
+# Common questions about citation
+!include common/citation.yml
+
+---
+# Template specific questions 
+!include project/custom.yml
+
+---
+# Template User Messages
+!include common/messages.yml
+
+---
+# Inlcudes customized # UNCOMMENT TO INCLUDE CUSTOME FEATURES
+# !include custom/customize.yml
