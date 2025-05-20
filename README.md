@@ -1,70 +1,49 @@
-# Jupyter Notebook Project Template for Research software
+[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
+# Notebook template for data analysis
 
-This is a copier Jupyter Notebook project template that implements the best practices on sustainable software for researchers in Natural and Engineering Science. The template provides boilerplate folder structure, a Jupyter notebook, documentation, etc.
+This is a copier Jupyter Notebook project template for data 
+analysis that implements the best practices on sustainable 
+software for researchers in Natural and Engineering Science. 
+The template provides boilerplate folder structure, a Jupyter 
+notebook, documentation, etc.
 
 ## How to Use
 
-**Requirements**
+1. Use [pipx](https://pipx.pypa.io/stable/installation/) to install `copier`, and render the template.
 
-- Python 3.11 or higher
-- Copier
+```bash
+# intalling copier
+pipx install copier
+```
 
-### Creating a software project
+2. Start a new software project using this template:
+
+```python
+copier copy https://github.com/<account>/<repo>.git <path/to/project-directory>
+```
+
+3. Inialize a Git repository in your templating project
 
 ```shell
-copier copy https://github.com/SS-NES/notebook-template <path/to/project-directory>
-```
-Alternatively, after clonning the repository, use a **full path** to `Software-Templates/`:
-
-```shell
-copier copy ~/<local-path>/Software-Templates <path/to/project-directory>
+cd <path/to/project-directory>
+git init
+git add . 
+git commit -m 'initial commit'
 ```
 
-### Updating an existing project
+## Contributing
+Read our [guidelines](CONTRIBUTING.md) to know how to be part of the development of this template. 
 
-Update the generated project by changing your answers. At the root of the software project, do:
+## License
 
-```shell
-copier update
-```
-> IMPORTANT: Before you are allow to update a project, the sofware project must be initialized as a Git repository, all files must be commited, and the status of the repository must show it is clean, i.e., no pending changes to commit.
 
-### Creating a software project from an SMP
-
-Given data from an SMP is provided as a YAML like:
-
-```yml
-project_name:  Demo
-release_date: June 4, 2024
-smp_version:  0.1.0
-authors:  [Jane Doe](mailto:doe.j@example.nl)
-purpose:  An example
-research_project_context: software templates
-ownership:  Institution
-version_control:  git
-public: True
-reuse: False
-repository: https://github.com
-software_license: Apache-2.0 (Apache License 2.0)
-citation: citation.cff
-user_documentation: user.md
-deployment_documentation: deploy.yml
-testing:  testing.yml
-quality:  Quality
-packaging:  PyPI
-maintenance:  maintenance.md
-sustainability: sustainable.md
-support:  support.md
-risk_analysis:  No risk
-data_management_plan: DMP
-```
-
-A  `smp.yml` file can be passed to copier when rendering the template.
-
-```shell
-copier copy --data-file </path/to/smp.yml> ~/<local-path>/Software-Templates <path/to/project-directory>
-```
+This template is freely available under an [Apache License 2.0](https://choosealicense.com/licenses/apache-2.0/)
 
 ## Acknowledgements
 
-- This template was inspired by [Cookiecutter Data Science](https://cookiecutter-data-science.drivendata.org)
+
+* [SS NES Meta Template](https://github.com/SS-NES/meta-template)
+* [Serious Scaffold Python](https://github.com/serious-scaffold/ss-python)
+* [Make a README](https://www.makeareadme.com/)
+
+
