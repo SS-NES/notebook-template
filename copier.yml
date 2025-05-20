@@ -8,8 +8,6 @@ _exclude:
     - "copier.yml"
     - "project"
     - ".meta-answers.yml"
-    - "CODE_OF_CONDUCT.md"
-    - "CONTRIBUTING.md"
 
 ---
 # Template settings
