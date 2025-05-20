@@ -5,8 +5,13 @@
    "metadata": {},
    "source": [
     "# {{ project_name }}\n",
+    "{% if software_license != 'No License' %}",
     "This project is licensed under {{ software_license }} \n",
     "and was created by {{ owner }}.\n",
+    "{% endif %}",
+    "{% if software_license == 'No License' %}",
+    "This projected was created by {{ owner }}.",
+    "{% endif %}",
     "\n",
     "#### **Project purpose**\n",
     "\n",
