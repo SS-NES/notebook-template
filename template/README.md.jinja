@@ -20,12 +20,14 @@
 If you want to contribute with the development of {{ project_name}}, read our [contriguting guidelines](CONTRIBUTING.md).
 {% endif %}
 
+{% if software_license !='No License' %}
 ## License
 This software is distributed under a [{{ software_license }}](LICENSE). 
+{% endif %}
 
 ## Copyright
 
-&copy; {{ copyright_holder }}, The Netherlands. 
+{{ copyright_holder }}, The Netherlands. 
 
 ## Citation
 
@@ -39,4 +41,5 @@ This software is distributed under a [{{ software_license }}](LICENSE).
 
 ## Acknowlegdements
 
-[Name anyone who deserves it.]
+- [Best practices for sustainable software project, TDCC NES](https://github.com/SS-NES)
+- [Any other acknowlegdements]
